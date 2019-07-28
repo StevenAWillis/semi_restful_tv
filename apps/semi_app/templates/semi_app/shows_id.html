@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <body>
+        <div class="vh-100 d-flex align-items-center">
+            <div class="mx-auto">
+                <div class="header">
+                    <h2>TV Show {{show.id}}</h2>
+                    <a href="/shows" class="goback">Go Back</a>
+                    <table>
+                </div>
+                <div class="">
+                    <h3>Title: {{show.title}}</h3>
+                    <h3>Network: {{show.network}}</h3>
+                    <h3>Release Date: {{show.release_date}}</h3>
+                    <h3>Network: {{show.description}}</h3>
+                </div>
+                <div class="footer">
+                    <div class="">
+                        <h3>Last Updated: {{show.updated_at}}</h3>
+                    </div>
+                    <div class="">
+                        <a href="/shows/{{show.id}}/edit" class="goback">Edit |</a>
+                        <a href="/shows/{{show.id}}/destroy" class="goback">Delete</a>
+                    </div>
+                </div>
+                </table>
+
+            </div>
+        </div>
+        </div>
+
+    </body>
+
+</html>
