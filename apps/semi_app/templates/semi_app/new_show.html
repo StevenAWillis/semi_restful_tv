@@ -12,6 +12,13 @@
     <body>
         <div class="vh-100 d-flex align-items-center">
             <div class="mx-auto">
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
                 <div class="header">
                     <h2>Add a New Show</h2>
                     <a href="/shows" class="goback">Go Back</a>
